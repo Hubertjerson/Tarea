@@ -1,0 +1,64 @@
+/*-------Inicio Del Main--------*/
+#primera {
+  background-color: #f4f4f4;
+  h2 {
+    padding-top: 30px;
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: overline;
+    font-family: "FjallaOne";
+  }
+  .contenedorMain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  article {
+    margin: 55px;
+    .imagenSection {
+      img {
+        width: 300px;
+        max-width: 1200px;
+        border-radius: 25px;
+      }
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      .productoMain {
+        margin: 0;
+        text-align: center;
+        font-size: 17px;
+        font-style: italic;
+      }
+      strong {
+        padding: 5px 15px;
+        width: 100%;
+      }
+      .rating {
+        padding: 0px 15px;
+        width: 100%;
+      }
+      .add-cartMain {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 15px 0 15px 0;
+        border: 1px solid black;
+        border-radius: 25px;
+        &:hover {
+          color: black;
+          background-color: transparent;
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+}

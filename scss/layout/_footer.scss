@@ -1,0 +1,66 @@
+/*-------Inicio Del Footer--------*/
+
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+  font-family: "FjallaOne";
+  &__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  &__cajas {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-around;
+  }
+  &__h2 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  }
+  &__link {
+    color: #f4f4f4;
+    font-weight: 300;
+    text-align: center;
+    &:hover {
+      color: yellow;
+    }
+    .fab {
+      font-size: 20px;
+      color: white;
+    }
+    .far {
+      font-size: 20px;
+      color: white;
+    }
+  }
+  &__logo {
+    width: 300px;
+  }
+  &__texto {
+    max-width: 350px;
+    font-weight: 500;
+    color: #f4f4f4;
+    font-size: 18px;
+  }
+  &__Copy {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0 40px;
+    align-content: center;
+    align-items: center;
+  }
+  &__p {
+    color: #f4f4f4;
+    margin-top: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,69 @@
+/*-------Ultima seccion home--------*/
+/*---------LAS MEJORES PROMOCIONES------------*/
+#fondoTres {
+  background-image: url("../img/Banner/BannerHomePromo.jpg");
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .contenidoTres {
+    display: grid;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    row-gap: 5em;
+    .contenidoAdentro {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 300px;
+        max-width: 1200px;
+        margin-left: 60px;
+        border-radius: 20px;
+      }
+      .infoUlti {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        .add-cart {
+          text-decoration: none;
+          margin-top: 2px;
+          color: white;
+          background-color: black;
+          padding: 15px;
+          border: 1px solid black;
+          border-radius: 25px;
+          &:hover {
+            color: black;
+            background-color: transparent;
+            border: 1px solid black;
+          }
+        }
+        .PrecioUlti {
+          padding: 5px 15px;
+          width: 100%;
+        }
+        .rating {
+          padding: 0px 15px;
+          width: 100%;
+        }
+      }
+    }
+    .tituloFin {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      text-align: center;
+      font-family: "Otomanopee";
+      font-style: oblique;
+      font-weight: 500;
+      font-size: 38px;
+      margin: 0;
+      padding-top: 2em;
+    }
+  }
+}

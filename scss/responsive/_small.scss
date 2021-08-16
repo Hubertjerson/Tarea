@@ -1,0 +1,53 @@
+/*------- Responsive --------*/
+/*----PEQUEÑOS (MAX-WIDTH:500PX)-----*/
+/*----SMALL------*/
+
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  /*-----PRIMERA PARTE HOME-------*/
+  #primera{ 
+      h2 {
+    padding-top: 60px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    img {
+      margin: auto;
+      width: 200px;
+    }
+  }
+  }
+  /*-----TERCERA PARTE HOME FORMULARIO--------*/
+  .formSection {
+    padding: 70px;
+  }
+  /*-----PENULTIMA SECCION HOME--------*/
+  #fondoTres {
+    .contenidoTres {
+      margin: 50px;
+      padding: 0px 30px 50px 30px;
+    }
+    .contenidoAdentro {
+      padding: 10px;
+    }
+    img {
+      margin: 0;
+    }
+  }
+  /*-----FOOTER-------*/
+  .footer {
+    padding: 0;
+    &__contenedor {
+      flex-direction: column;
+      padding: 10px;
+      text-align: center;
+    }
+    &__link {
+      padding-bottom: 10px;
+      padding-left: 40px;
+    }
+    &__h2 {
+      padding-left: 40px;
+    }
+  }
+}

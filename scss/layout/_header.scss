@@ -1,0 +1,52 @@
+/*-------Inicio Del Header--------*/
+/*----------- Menu----------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background: black;
+  .logo {
+    height: 80px;
+    .logoImagen {
+      display: block;
+      height: 100%;
+    }
+  }
+  .Enlaces {
+    .ul {
+      display: flex;
+      align-items: center;
+    }
+    .li {
+      margin-right: 1.5rem;
+    }
+    .link {
+      color: white;
+      padding-left: 20px;
+      font-size: 15px;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-family: "Yomogi";
+      text-decoration: none;
+      &:hover {
+        color: black;
+        background: white;
+        border-radius: 10px;
+        border: 5px solid;
+        padding: 5px 5px;
+      }
+    }
+    #check {
+      display: none;
+    }
+    .menuIcono {
+      img {
+        display: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+      }
+    }
+  }
+}

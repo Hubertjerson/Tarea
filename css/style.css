@@ -1,0 +1,702 @@
+@charset "UTF-8";
+/*------FUENTE DE LETRA------*/
+@font-face {
+  font-family: "Anton";
+  src: url(../Fuentes/Anton/Anton-Regular.ttf); }
+
+@font-face {
+  font-family: "Otomanopee";
+  src: url(../Fuentes/Otomanopee_One/OtomanopeeOne-Regular.ttf); }
+
+@font-face {
+  font-family: "Yomogi";
+  src: url(../Fuentes/Yomogi/Yomogi-Regular.ttf); }
+
+@font-face {
+  font-family: "AbrilFatface";
+  src: url(Fuentes/Abril_Fatface/AbrilFatface-Regular.ttf); }
+
+@font-face {
+  font-family: "FjallaOne";
+  src: url(../Fuentes/Fjalla_One/FjallaOne-Regular.ttf); }
+
+@font-face {
+  font-family: "Pacifico";
+  src: url(../Fuentes/Pacifico/Pacifico-Regular.ttf); }
+
+/*-------GENERAL----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+body {
+  font-family: "Times New Roman", Times, serif; }
+
+/*-------Inicio Del Header--------*/
+/*----------- Menu----------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background: black; }
+  .header .logo {
+    height: 80px; }
+    .header .logo .logoImagen {
+      display: block;
+      height: 100%; }
+  .header .Enlaces .ul {
+    display: flex;
+    align-items: center; }
+  .header .Enlaces .li {
+    margin-right: 1.5rem; }
+  .header .Enlaces .link {
+    color: white;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Yomogi";
+    text-decoration: none; }
+    .header .Enlaces .link:hover {
+      color: black;
+      background: white;
+      border-radius: 10px;
+      border: 5px solid;
+      padding: 5px 5px; }
+  .header .Enlaces #check {
+    display: none; }
+  .header .Enlaces .menuIcono img {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 2px; }
+
+/*-------Inicio Del Footer--------*/
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+  font-family: "FjallaOne"; }
+  .footer__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto; }
+  .footer__cajas {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-around; }
+  .footer__h2 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin: 0; }
+  .footer__link {
+    color: #f4f4f4;
+    font-weight: 300;
+    text-align: center; }
+    .footer__link:hover {
+      color: yellow; }
+    .footer__link .fab {
+      font-size: 20px;
+      color: white; }
+    .footer__link .far {
+      font-size: 20px;
+      color: white; }
+  .footer__logo {
+    width: 300px; }
+  .footer__texto {
+    max-width: 350px;
+    font-weight: 500;
+    color: #f4f4f4;
+    font-size: 18px; }
+  .footer__Copy {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0 40px;
+    align-content: center;
+    align-items: center; }
+  .footer__p {
+    color: #f4f4f4;
+    margin-top: 20px;
+    text-align: center; }
+
+/*-------Inicio Del Main--------*/
+#primera {
+  background-color: #f4f4f4; }
+  #primera h2 {
+    padding-top: 30px;
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: overline;
+    font-family: "FjallaOne"; }
+  #primera .contenedorMain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  #primera article {
+    margin: 55px; }
+    #primera article .imagenSection img {
+      width: 300px;
+      max-width: 1200px;
+      border-radius: 25px; }
+    #primera article:hover {
+      transform: scale(1.2); }
+    #primera article .info {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center; }
+      #primera article .info .productoMain {
+        margin: 0;
+        text-align: center;
+        font-size: 17px;
+        font-style: italic; }
+      #primera article .info strong {
+        padding: 5px 15px;
+        width: 100%; }
+      #primera article .info .rating {
+        padding: 0px 15px;
+        width: 100%; }
+      #primera article .info .add-cartMain {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 15px 0 15px 0;
+        border: 1px solid black;
+        border-radius: 25px; }
+        #primera article .info .add-cartMain:hover {
+          color: black;
+          background-color: transparent;
+          border: 1px solid black; }
+
+/*--------PRIMERA SECCION DE LA PAGINA HOME----------*/
+/*--------HERO---------*/
+.bannerHero {
+  height: 700px;
+  background-image: url("../img/Banner/BannerHome.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center; }
+  .bannerHero .Contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0; }
+  .bannerHero .bannerTexto {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .bannerHero .bannerTitulo {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    font-family: "AbrilFatface";
+    color: black; }
+  .bannerHero .Boton {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-family: "AbrilFatface"; }
+    .bannerHero .Boton:hover {
+      color: white;
+      background-color: transparent;
+      border: 1px solid white; }
+
+/*-------Inicio Del form section--------*/
+.fondo {
+  height: 500px;
+  background-image: url("../img/Banner/BannerFromHome.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white; }
+
+.formSection {
+  padding: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  font-family: "FjallaOne"; }
+  .formSection input {
+    padding: 10px 90px 10px 90px;
+    margin: 10px;
+    border-radius: 20px; }
+  .formSection h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    padding-bottom: 20px; }
+  .formSection label {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500px;
+    color: white; }
+  .formSection::placeholder {
+    font-size: 15px;
+    color: dimgray;
+    text-align: center; }
+  .formSection p {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-weight: 500; }
+
+.botonForm:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  transform: scale(1.2); }
+
+/*-------Ultima seccion home--------*/
+/*---------LAS MEJORES PROMOCIONES------------*/
+#fondoTres {
+  background-image: url("../img/Banner/BannerHomePromo.jpg");
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  #fondoTres .contenidoTres {
+    display: grid;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    row-gap: 5em; }
+    #fondoTres .contenidoTres .contenidoAdentro {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center; }
+      #fondoTres .contenidoTres .contenidoAdentro img {
+        width: 300px;
+        max-width: 1200px;
+        margin-left: 60px;
+        border-radius: 20px; }
+      #fondoTres .contenidoTres .contenidoAdentro .infoUlti {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center; }
+        #fondoTres .contenidoTres .contenidoAdentro .infoUlti .add-cart {
+          text-decoration: none;
+          margin-top: 2px;
+          color: white;
+          background-color: black;
+          padding: 15px;
+          border: 1px solid black;
+          border-radius: 25px; }
+          #fondoTres .contenidoTres .contenidoAdentro .infoUlti .add-cart:hover {
+            color: black;
+            background-color: transparent;
+            border: 1px solid black; }
+        #fondoTres .contenidoTres .contenidoAdentro .infoUlti .PrecioUlti {
+          padding: 5px 15px;
+          width: 100%; }
+        #fondoTres .contenidoTres .contenidoAdentro .infoUlti .rating {
+          padding: 0px 15px;
+          width: 100%; }
+    #fondoTres .contenidoTres .tituloFin {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      text-align: center;
+      font-family: "Otomanopee";
+      font-style: oblique;
+      font-weight: 500;
+      font-size: 38px;
+      margin: 0;
+      padding-top: 2em; }
+
+/*------INICIO  DE PAGINA CARTA----------*/
+/*------- HEROCARTA --------*/
+.bannerCarta {
+  height: 60vh;
+  background-image: url("../img/Banner/BannerCarta.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center; }
+  .bannerCarta .cartaTexto {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; }
+    .bannerCarta .cartaTexto h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px; }
+    .bannerCarta .cartaTexto h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px; }
+
+/*------- MENU --------*/
+/*-------SLIDER CARTA Y CONFIG GENERAL--------*/
+.contenidoCarta {
+  padding: 50px 40px 0 150px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+  margin-left: -20px; }
+
+.siderBarCarta {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5; }
+  .siderBarCarta li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 20px; }
+  .siderBarCarta a {
+    color: black;
+    padding-top: 40px;
+    font-size: 15px;
+    padding-bottom: 20px;
+    font-style: oblique;
+    text-align: justify;
+    text-decoration: none; }
+    .siderBarCarta a:hover {
+      color: red; }
+  .siderBarCarta h1 {
+    text-align: justify;
+    font-size: 20px; }
+
+/*PRODUCTOS*/
+.cartaProducto:hover {
+  transform: scale(1.2); }
+
+.cartaProducto img {
+  width: 230px;
+  max-width: 1200px;
+  height: 150px;
+  max-height: 1180px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  transition: all 0.5s; }
+
+.cartaProducto h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+  font-style: italic; }
+
+.cartaProducto .info {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; }
+  .cartaProducto .info strong {
+    padding: 5px 15px;
+    width: 100%; }
+  .cartaProducto .info .rating {
+    padding: 0px 15px;
+    width: 100%; }
+  .cartaProducto .info .add-cart {
+    text-decoration: none;
+    margin-top: 2px;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 25px; }
+    .cartaProducto .info .add-cart:hover {
+      color: black;
+      background-color: transparent;
+      border: 1px solid black; }
+
+/*------NUMERACION DE PAGINACION --------*/
+.Paginacion {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .Paginacion__contenedor {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #382727;
+    border-radius: 50px; }
+  .Paginacion__numero {
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: black;
+    font-size: 19px;
+    font-weight: 700;
+    transition: 0.2s linear; }
+    .Paginacion__numero:hover {
+      background-color: black;
+      color: white; }
+
+/*------- Seccion Promociones --------*/
+.bannerPromo {
+  height: 60vh;
+  background-image: url("../img/Banner/BannerPromo.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center; }
+  .bannerPromo .promoTexto {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; }
+
+/*------- Sucursales --------*/
+/*------- Primera parte --------*/
+.grid {
+  margin: 80px;
+  padding-left: 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center; }
+
+.sucursal {
+  background: #eee5e9;
+  border: none;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform .3s; }
+  .sucursal:hover {
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3); }
+  .sucursal .imagenSucursal {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; }
+  .sucursal .text {
+    padding: 0px 20px; }
+    .sucursal .text h3 {
+      text-transform: uppercase; }
+    .sucursal .text button {
+      background: #ef6f6c;
+      border-radius: 20px;
+      border: none;
+      color: #fff;
+      padding: 10px;
+      margin: 10px 0 20px 0;
+      width: 100%;
+      font-weight: 600;
+      text-transform: uppercase;
+      cursor: pointer; }
+
+/*----CONTACTO-----*/
+/* Inicio de formulario de contacto */
+/* Margen vw =ancho, vh =alto , */
+#contacto {
+  background-image: url(../img/Banner/BannerContacto.jpg);
+  background-size: 100vw 100vh;
+  background-position: fixed;
+  margin: 0;
+  padding: 200px; }
+  #contacto form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 50px 60px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px; }
+  #contacto h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px; }
+  #contacto input, #contacto textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: none; }
+  #contacto textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%; }
+
+#Boton {
+  background: #3184a3;
+  color: #fff;
+  padding: 20px; }
+  #Boton :hover {
+    cursor: pointer; }
+
+/*------- Responsive --------*/
+/*----PEQUEÑOS (MAX-WIDTH:500PX)-----*/
+/*----SMALL------*/
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  /*-----PRIMERA PARTE HOME-------*/
+  #primera h2 {
+    padding-top: 60px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    #primera h2 img {
+      margin: auto;
+      width: 200px; }
+  /*-----TERCERA PARTE HOME FORMULARIO--------*/
+  .formSection {
+    padding: 70px; }
+  /*-----PENULTIMA SECCION HOME--------*/
+  #fondoTres .contenidoTres {
+    margin: 50px;
+    padding: 0px 30px 50px 30px; }
+  #fondoTres .contenidoAdentro {
+    padding: 10px; }
+  #fondoTres img {
+    margin: 0; }
+  /*-----FOOTER-------*/
+  .footer {
+    padding: 0; }
+    .footer__contenedor {
+      flex-direction: column;
+      padding: 10px;
+      text-align: center; }
+    .footer__link {
+      padding-bottom: 10px;
+      padding-left: 40px; }
+    .footer__h2 {
+      padding-left: 40px; } }
+
+/*--------- INTERMEDIO -----(MIN-WIDTH:500PX)(MAX-WIDTH:800) -----*/
+/*---MENU PRINCIPAL---*/
+@media screen and (min-width: 500px) and (max-width: 720px) {
+  /*-----HEADER-----*/
+  .header .Enlaces .checkbtn {
+    display: block; }
+  .header .Enlaces .menuIcono img {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer; }
+  .header .Enlaces .ul {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: -100%;
+    background: #222;
+    width: 100%;
+    height: 70vh;
+    right: 0; }
+  .header .Enlaces .ul .li {
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin: 0; }
+  .header #check:checked ~ .ul {
+    left: 0;
+    transition: all 0.25s; }
+  /*-----BANNER HERO-------*/
+  .bannerHero .bannerTitulo {
+    font-size: 36px;
+    margin-top: 50px; }
+  .bannerHero .Boton {
+    margin-bottom: 50px; }
+  .bannerHero a {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: none;
+    align-items: center;
+    justify-content: center; }
+  /*-----PRIMERA PARTE HOME-------*/
+  #primera h2 {
+    padding-top: 80px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  #primera img {
+    margin: auto;
+    padding-top: -100px; }
+  /*-----SEGUNDA PARTE HOME------*/
+  .formSection {
+    padding: 40px; }
+  /*-------PENULTIMA SECCION HOME----------*/
+  #fondoTres .contenidoTres {
+    display: flex;
+    flex-direction: column;
+    margin: 50px; }
+  #fondoTres .contenidoAdentro {
+    padding: 10px; }
+  /*-----FOOTER-------*/
+  footer {
+    padding: 0 20px 0 40px; }
+  __cajas {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center; }
+  __link .fab {
+    padding-left: 30px; }
+  __link .far {
+    padding-left: 30px; }
+  __link {
+    padding-bottom: 10px;
+    padding-left: 40px; }
+  .h2 {
+    padding-left: 40px; }
+  /*---SEGUNDA SECCION CARTA------*/
+  .contenidoCarta {
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .siderBarCarta ul {
+    margin: 10px;
+    padding: 10px; }
+  .siderBarCarta a {
+    text-align: center;
+    margin: 1px; }
+  .siderBarCarta h1 {
+    font-size: 30px;
+    margin: 0;
+    text-align: center; }
+  .cartaProducto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: black solid 2px;
+    padding: 10px;
+    border-radius: 20px; }
+  h2 {
+    font-size: 30px;
+    margin: 0;
+    text-align: center; } }

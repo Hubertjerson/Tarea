@@ -1,0 +1,145 @@
+/*--------- INTERMEDIO -----(MIN-WIDTH:500PX)(MAX-WIDTH:800) -----*/
+/*---MENU PRINCIPAL---*/
+@media screen and (min-width: 500px) and (max-width: 720px) {
+  /*-----HEADER-----*/
+  .header {
+    .Enlaces {
+      .checkbtn {
+        display: block;
+      }
+      .menuIcono {
+        img {
+          display: block;
+          position: absolute;
+          top: 30px;
+          right: 20px;
+          cursor: pointer;
+        }
+      }
+      .ul {
+        display: block;
+        position: absolute;
+        top: 90px;
+        left: -100%;
+        background: #222;
+        width: 100%;
+        height: 70vh;
+        right: 0;
+      }
+      .ul .li {
+        padding: 2.5rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
+    }
+    #check:checked ~ .ul {
+      left: 0;
+      transition: all 0.25s;
+    }
+  }
+  /*-----BANNER HERO-------*/
+  .bannerHero {
+    .bannerTitulo {
+      font-size: 36px;
+      margin-top: 50px;
+    }
+    .Boton {
+      margin-bottom: 50px;
+    }
+    a {
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      font-weight: none;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  /*-----PRIMERA PARTE HOME-------*/
+  #primera {
+    h2 {
+      padding-top: 80px;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+      padding-top: -100px;
+    }
+  }
+  /*-----SEGUNDA PARTE HOME------*/
+  .formSection {
+    padding: 40px;
+  }
+  /*-------PENULTIMA SECCION HOME----------*/
+  #fondoTres {
+    .contenidoTres {
+      display: flex;
+      flex-direction: column;
+      margin: 50px;
+    }
+    .contenidoAdentro {
+      padding: 10px;
+    }
+  }
+  /*-----FOOTER-------*/
+  footer {
+    padding: 0 20px 0 40px;
+  }
+  &__cajas {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+  &__link .fab {
+    padding-left: 30px;
+  }
+  &__link .far {
+    padding-left: 30px;
+  }
+  &__link {
+    padding-bottom: 10px;
+    padding-left: 40px;
+  }
+  .h2 {
+    padding-left: 40px;
+  }
+  /*---SEGUNDA SECCION CARTA------*/
+  .contenidoCarta {
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .siderBarCarta {
+    ul {
+      margin: 10px;
+      padding: 10px;
+    }
+    a {
+      text-align: center;
+      margin: 1px;
+    }
+    h1 {
+      font-size: 30px;
+      margin: 0;
+      text-align: center;
+    }
+  }
+  .cartaProducto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: black solid 2px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  h2 {
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+  }
+}

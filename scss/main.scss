@@ -1,0 +1,24 @@
+// FUENTES DE LETRA UTILIZADAS //
+@import "../scss/fonts/fuentes";
+// GENERAL A TODA LA PAGINA//
+@import "../scss/general/general";
+// LAYOUT HEADER Y FOOTER//
+@import "../scss/layout/header";
+@import "../scss/layout/footer";
+// PRIMERA PARTE //
+@import "../scss/paginas/home";
+@import "../scss/banners/bannerhome";
+@import "../scss/formularios/form";
+@import "../scss/Productos/productoHome";
+// SEGUNDA PARTE //
+@import "../scss/banners/bannercarta";
+@import "../scss/Productos/productocarta.scss";
+// TERCERA PARTE //
+@import "../scss/banners/bannerpromo";
+// CUARTA PARTE //
+@import "../scss/paginas/sucursales";
+//  QUINTA PARTE //
+@import "../scss/formularios/formcontacto";
+// RESPONSIVE //
+@import "../scss/responsive/small";
+@import "../scss/responsive/medium";

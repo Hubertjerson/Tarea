@@ -1,0 +1,29 @@
+/*------INICIO  DE PAGINA CARTA----------*/
+/*------- HEROCARTA --------*/
+
+.bannerCarta {
+  height: 60vh;
+  background-image: url("../img/Banner/BannerCarta.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  .cartaTexto {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+  }
+}
