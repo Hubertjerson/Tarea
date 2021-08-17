@@ -691,12 +691,35 @@ body {
     margin: 0;
     text-align: center; }
   .cartaProducto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     border: black solid 2px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px; }
+    .cartaProducto img {
+      margin-left: 40px; }
   h2 {
     font-size: 30px;
     margin: 0;
-    text-align: center; } }
+    text-align: center; }
+  /*---SUCURSALES-----*/
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0;
+    justify-content: center;
+    align-items: center; } }
+
+/*--------- GRANDE -----(MIN-WIDTH:720PX)(MAX-WIDTH:1200PX) -----*/
+/*---MENU PRINCIPAL---*/
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+  /*---SEGUNDA SECCION CARTA------*/
+  .contenidoCarta {
+    display: grid;
+    padding: 0px;
+    margin: 20px; }
+  .cartaProducto {
+    display: grid;
+    border: black solid 1px;
+    padding: 4px;
+    border-radius: 20px; }
+    .cartaProducto img {
+      width: 180px; } }

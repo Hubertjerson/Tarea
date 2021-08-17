@@ -1,0 +1,19 @@
+/*--------- GRANDE -----(MIN-WIDTH:720PX)(MAX-WIDTH:1200PX) -----*/
+/*---MENU PRINCIPAL---*/
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+  /*---SEGUNDA SECCION CARTA------*/
+  .contenidoCarta {
+    display: grid;
+    padding: 0px;
+    margin: 20px;
+  }
+  .cartaProducto {
+    display: grid;
+    border: black solid 1px;
+    padding: 4px;
+    border-radius: 20px;
+    img {
+      width: 180px;
+    }
+  }
+}

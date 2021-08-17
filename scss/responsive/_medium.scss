@@ -131,15 +131,24 @@
     }
   }
   .cartaProducto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     border: black solid 2px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
+    img {
+      margin-left: 40px;
+    }
   }
   h2 {
     font-size: 30px;
     margin: 0;
     text-align: center;
+  }
+  /*---SUCURSALES-----*/
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
   }
 }
