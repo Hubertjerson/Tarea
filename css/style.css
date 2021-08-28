@@ -716,10 +716,20 @@ body {
     display: grid;
     padding: 0px;
     margin: 20px; }
+  .sliderBarCarta {
+    display: block;
+    position: relative; }
+    .sliderBarCarta li {
+      display: block;
+      position: relative; }
+    .sliderBarCarta a {
+      display: block;
+      position: absolute; }
   .cartaProducto {
     display: grid;
     border: black solid 1px;
     padding: 4px;
+    margin-top: 1em;
     border-radius: 20px; }
     .cartaProducto img {
       width: 180px; } }

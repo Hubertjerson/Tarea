@@ -7,10 +7,23 @@
     padding: 0px;
     margin: 20px;
   }
+  .sliderBarCarta{
+    display: block;
+    position: relative;
+    li{
+    display: block;
+    position: relative;
+    }
+    a{
+      display: block;
+      position: absolute;
+    }
+  }
   .cartaProducto {
     display: grid;
     border: black solid 1px;
     padding: 4px;
+    margin-top: 1em;
     border-radius: 20px;
     img {
       width: 180px;
